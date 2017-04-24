@@ -1,0 +1,8 @@
+#mainPic {
+  background-image: url(../img/hero.jpg);
+  min-height: 400px;
+}
+
+.card {
+  margin: 10px 20px;
+}

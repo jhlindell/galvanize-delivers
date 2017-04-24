@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/materialize.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/deliver.css">
+  <title>Galvanize Delivers</title>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-wrapper blue darken-3">
+      <a href="index.html" class="brand-logo left-align">Galvanize Delivers</a>
+      <a href="order.html" class="href right white-text blue darken-4">Order Delivery</a>
+    </div>
+  </nav>
+  <main class="container">
+    <div class="row">
+      <div class="cards-container col s12 m7">
+        <h4>Menu</h4>
+        <div id="burger" class="card col s12 m5 small">
+          <div class="card-image">
+            <img src="img/burger.jpg">
+          </div>
+          <div class="card-content">
+            <h5>Royale with Cheese</h5>
+            <h6>$8.99</h6>
+          </div>
+          <div class="card-action">
+            <a href="#" data-item="Royale with Cheese" data-price="8.99">ADD TO ORDER</a>
+          </div>
+        </div>
+        <div id="pizza" class="card col s12 m5 small">
+          <div class="card-image">
+            <img src="img/pizza.jpg">
+          </div>
+          <div class="card-content">
+            <h5>Arugala Pie</h5>
+            <h6>$11.99</h6>
+          </div>
+          <div class="card-action">
+            <a href="#" data-item="Arugala Pie" data-price="11.99">ADD TO ORDER</a>
+          </div>
+        </div>
+        <div id="ribs" class="card col s12 m5 small">
+          <div class="card-image">
+            <img src="img/ribs.jpg">
+          </div>
+          <div class="card-content">
+            <h5>Smoked Swine</h5>
+            <h6>$14.99</h6>
+          </div>
+          <div class="card-action">
+            <a href="#" data-item="Smoked Swine" data-price="14.99">ADD TO ORDER</a>
+          </div>
+        </div>
+        <div id="iceCream" class="card col s12 m5 small">
+          <div class="card-image">
+            <img src="img/ice_cream.jpg">
+          </div>
+          <div class="card-content">
+            <h5>Ice Cream Biscuit</h5>
+            <h6>$7.99</h6>
+          </div>
+          <div class="card-action">
+            <a href="#" data-item="Ice Cream Biscuit" data-price="7.99">ADD TO ORDER</a>
+          </div>
+        </div>
+      </div>
+      <div id="rightColumn" class="col s12 m5">
+        <div class="row">
+          <h4>Order</h4>
+          <table class="striped">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th class="right-align">Price</th>
+              </tr>
+            </thead>
+            <tbody id="orderTable">
+
+            </tbody>
+            <tfoot id="theBill">
+              <tr>
+                <td class="right-align">Subtotal</td>
+                <td id="subTotal" class="right-align" data-price="0.00">$0.00</td>
+              </tr>
+              <tr>
+                <td class="right-align">Tax</td>
+                <td id="tax" class="right-align" data-price="0.00">$0.00</td>
+              </tr>
+              <tr>
+                <td class="right-align">Total</td>
+                <td id="totalBill" class="right-align" data-price="0.00">$0.00</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+        <div class="row">
+          <form id="userInfo" method="post" action="">
+            <div class="input-field">
+              <i class="material-icons prefix pink-text">account_circle</i>
+              <input id="name" type="text" class="validate" required>
+              <label for="name">Name</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons prefix pink-text">phone</i>
+              <input id="telephone" type="tel" class="validate" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required>
+              <label for="telephone">Phone Number</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons prefix pink-text">business</i>
+              <input id="address" type="text" class="validate" required>
+              <label for="address">Address</label>
+            </div>
+            <div class="center-align">
+              <button id="placeOrderButton" class="waves-effect waves-light btn-large pink">Place Order</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="page-footer blue darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m8 white-text">
+          <h5>Galvanize Delivers</h5>
+          <h6>Fine Dining, Delivered.</h6>
+        </div>
+        <div class="col s12 m4 white-text">
+          <ul>
+            <li><a href="index.html" class="grey-text text-lighten-3">Home</a></li>
+            <li><a href="order.html" class="grey-text text-lighten-3">Order Delivery</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright blue darken-4">
+      <div class="container">
+        ©2016 Galvanize Delivers
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/delivers.js"></script>
+</body>
+
+</html>
